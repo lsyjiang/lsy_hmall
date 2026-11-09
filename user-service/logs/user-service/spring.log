@@ -1,0 +1,44 @@
+21:48:06:850  INFO 23640 --- [main] com.hmall.user.UserApplication           : Starting UserApplication using Java 17.0.8 on DESKTOP-JVPUE91 with PID 23640 (F:\Code\hmall\user-service\target\classes started by MR in F:\Code\hmall\user-service)
+21:48:06:853 DEBUG 23640 --- [main] com.hmall.user.UserApplication           : Running with Spring Boot v2.7.12, Spring v5.3.27
+21:48:06:853  INFO 23640 --- [main] com.hmall.user.UserApplication           : The following 1 profile is active: "local"
+21:48:08:037  INFO 23640 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=3806ce37-7eb2-3f04-a62b-fa713fdcbef2
+21:48:08:678  INFO 23640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8084 (http)
+21:48:08:692  INFO 23640 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+21:48:08:692  INFO 23640 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+21:48:08:899  INFO 23640 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+21:48:08:900  INFO 23640 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1986 ms
+21:48:11:803  INFO 23640 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:48:11:832  INFO 23640 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+21:48:13:130  INFO 23640 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:48:13:321  INFO 23640 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of a54728d3-678f-4328-9cfe-7f5398977b83
+21:48:13:396  INFO 23640 --- [main] org.reflections.Reflections              : Reflections took 29 ms to scan 1 urls, producing 3 keys and 6 values 
+21:48:13:427  INFO 23640 --- [main] org.reflections.Reflections              : Reflections took 9 ms to scan 1 urls, producing 4 keys and 9 values 
+21:48:13:436  INFO 23640 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 3 keys and 10 values 
+21:48:13:439  WARN 23640 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+21:48:13:448  INFO 23640 --- [main] org.reflections.Reflections              : Reflections took 8 ms to scan 1 urls, producing 1 keys and 5 values 
+21:48:13:455  INFO 23640 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 7 values 
+21:48:13:464  INFO 23640 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+21:48:13:466  WARN 23640 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+21:48:13:467  INFO 23640 --- [main] com.alibaba.nacos.common.remote.client   : [a54728d3-678f-4328-9cfe-7f5398977b83] RpcClient init label, labels = {module=naming, source=sdk}
+21:48:13:469  INFO 23640 --- [main] com.alibaba.nacos.common.remote.client   : [a54728d3-678f-4328-9cfe-7f5398977b83] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+21:48:13:470  INFO 23640 --- [main] com.alibaba.nacos.common.remote.client   : [a54728d3-678f-4328-9cfe-7f5398977b83] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+21:48:13:470  INFO 23640 --- [main] com.alibaba.nacos.common.remote.client   : [a54728d3-678f-4328-9cfe-7f5398977b83] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+21:48:13:472  INFO 23640 --- [main] com.alibaba.nacos.common.remote.client   : [a54728d3-678f-4328-9cfe-7f5398977b83] Try to connect to server on start up, server: {serverIp = '192.168.100.128', server main port = 8848}
+21:48:14:808  INFO 23640 --- [main] com.alibaba.nacos.common.remote.client   : [a54728d3-678f-4328-9cfe-7f5398977b83] Success to connect to server [192.168.100.128:8848] on start up, connectionId = 1794232023152_192.168.100.1_58700
+21:48:14:809  INFO 23640 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [a54728d3-678f-4328-9cfe-7f5398977b83] Notify connected event to listeners.
+21:48:14:809  INFO 23640 --- [main] com.alibaba.nacos.common.remote.client   : [a54728d3-678f-4328-9cfe-7f5398977b83] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+21:48:14:810  INFO 23640 --- [main] com.alibaba.nacos.common.remote.client   : [a54728d3-678f-4328-9cfe-7f5398977b83] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$908/0x000001c73d7746b8
+21:48:14:870  INFO 23640 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8084 (http) with context path ''
+21:48:14:885  INFO 23640 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP user-service 192.168.255.1:8084 register finished
+21:48:14:939  INFO 23640 --- [http-nio-8084-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+21:48:14:939  INFO 23640 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+21:48:14:940  INFO 23640 --- [http-nio-8084-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+21:48:14:965  WARN 23640 --- [http-nio-8084-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+21:48:15:392  INFO 23640 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [a54728d3-678f-4328-9cfe-7f5398977b83] Receive server push request, request = NotifySubscriberRequest, requestId = 65
+21:48:15:398  INFO 23640 --- [nacos-grpc-client-executor-9] com.alibaba.nacos.common.remote.client   : [a54728d3-678f-4328-9cfe-7f5398977b83] Ack server push request, request = NotifySubscriberRequest, requestId = 65
+21:48:16:135  INFO 23640 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+21:48:16:135  INFO 23640 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+21:48:16:138  INFO 23640 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+21:48:16:159  INFO 23640 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+21:48:16:265  INFO 23640 --- [main] com.hmall.user.UserApplication           : Started UserApplication in 11.409 seconds (JVM running for 12.079)
+21:48:18:520  WARN 23640 --- [http-nio-8084-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
