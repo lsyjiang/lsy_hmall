@@ -1,0 +1,111 @@
+23:15:56:304  INFO 5468 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 17.0.8 on DESKTOP-JVPUE91 with PID 5468 (F:\Code\hmall\trade-service\target\classes started by MR in F:\Code\hmall\trade-service)
+23:15:56:307 DEBUG 5468 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+23:15:56:308  INFO 5468 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+23:15:57:593  INFO 5468 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=5a68333c-a56a-3126-9796-27c907312dc5
+23:15:58:280  INFO 5468 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+23:15:58:295  INFO 5468 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+23:15:58:295  INFO 5468 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+23:15:58:506  INFO 5468 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+23:15:58:507  INFO 5468 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2142 ms
+23:15:58:578  WARN 5468 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [F:\Code\hmall\trade-service\target\classes\com\hmall\trade\controller\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderServiceImpl': Resolution of declared constructors on bean Class [com.hmall.trade.service.impl.OrderServiceImpl] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e] failed; nested exception is java.lang.NoClassDefFoundError: com/hmall/api/client/CartClient
+23:15:58:580  INFO 5468 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+23:15:58:601  INFO 5468 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+23:15:58:624 ERROR 5468 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'orderController' defined in file [F:\Code\hmall\trade-service\target\classes\com\hmall\trade\controller\OrderController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderServiceImpl': Resolution of declared constructors on bean Class [com.hmall.trade.service.impl.OrderServiceImpl] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e] failed; nested exception is java.lang.NoClassDefFoundError: com/hmall/api/client/CartClient
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:800) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:229) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1372) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1222) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.27.jar:5.3.27]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
+	at com.hmall.trade.TradeApplication.main(TradeApplication.java:14) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'orderServiceImpl': Resolution of declared constructors on bean Class [com.hmall.trade.service.impl.OrderServiceImpl] from ClassLoader [jdk.internal.loader.ClassLoaders$AppClassLoader@70dea4e] failed; nested exception is java.lang.NoClassDefFoundError: com/hmall/api/client/CartClient
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:309) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineConstructorsFromBeanPostProcessors(AbstractAutowireCapableBeanFactory.java:1302) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1219) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:887) ~[spring-beans-5.3.27.jar:5.3.27]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 19 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/hmall/api/client/CartClient
+	at java.base/java.lang.Class.getDeclaredConstructors0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.privateGetDeclaredConstructors(Class.java:3373) ~[na:na]
+	at java.base/java.lang.Class.getDeclaredConstructors(Class.java:2555) ~[na:na]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.determineCandidateConstructors(AutowiredAnnotationBeanPostProcessor.java:304) ~[spring-beans-5.3.27.jar:5.3.27]
+	... 32 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.hmall.api.client.CartClient
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	... 36 common frames omitted
+
+23:18:55:427  INFO 4892 --- [main] com.hmall.trade.TradeApplication         : Starting TradeApplication using Java 17.0.8 on DESKTOP-JVPUE91 with PID 4892 (F:\Code\hmall\trade-service\target\classes started by MR in F:\Code\hmall\trade-service)
+23:18:55:430 DEBUG 4892 --- [main] com.hmall.trade.TradeApplication         : Running with Spring Boot v2.7.12, Spring v5.3.27
+23:18:55:430  INFO 4892 --- [main] com.hmall.trade.TradeApplication         : The following 1 profile is active: "local"
+23:18:56:552  INFO 4892 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=9b4035e5-2683-3797-bcd5-ba2870971b2b
+23:18:57:148  INFO 4892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8085 (http)
+23:18:57:158  INFO 4892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+23:18:57:158  INFO 4892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.75]
+23:18:57:349  INFO 4892 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+23:18:57:349  INFO 4892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1866 ms
+23:18:57:542  INFO 4892 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'item-service' URL not provided. Will try picking an instance via load-balancing.
+23:18:58:255  INFO 4892 --- [main] o.s.c.openfeign.FeignClientFactoryBean   : For 'cart-service' URL not provided. Will try picking an instance via load-balancing.
+23:19:00:048  INFO 4892 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+23:19:00:078  INFO 4892 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2ControllerWebMvc#getDocumentation(String, HttpServletRequest)]
+23:19:01:356  INFO 4892 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+23:19:01:523  INFO 4892 --- [main] com.alibaba.nacos.common.remote.client   : [RpcClientFactory] create a new rpc client of 667678b0-b99b-4dfb-bdec-909c0488cf15
+23:19:01:607  INFO 4892 --- [main] org.reflections.Reflections              : Reflections took 36 ms to scan 1 urls, producing 3 keys and 6 values 
+23:19:01:639  INFO 4892 --- [main] org.reflections.Reflections              : Reflections took 8 ms to scan 1 urls, producing 4 keys and 9 values 
+23:19:01:650  INFO 4892 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 3 keys and 10 values 
+23:19:01:653  WARN 4892 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+23:19:01:659  INFO 4892 --- [main] org.reflections.Reflections              : Reflections took 5 ms to scan 1 urls, producing 1 keys and 5 values 
+23:19:01:668  INFO 4892 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 1 keys and 7 values 
+23:19:01:676  INFO 4892 --- [main] org.reflections.Reflections              : Reflections took 6 ms to scan 1 urls, producing 2 keys and 8 values 
+23:19:01:679  WARN 4892 --- [main] org.reflections.Reflections              : given scan urls are empty. set urls in the configuration
+23:19:01:679  INFO 4892 --- [main] com.alibaba.nacos.common.remote.client   : [667678b0-b99b-4dfb-bdec-909c0488cf15] RpcClient init label, labels = {module=naming, source=sdk}
+23:19:01:681  INFO 4892 --- [main] com.alibaba.nacos.common.remote.client   : [667678b0-b99b-4dfb-bdec-909c0488cf15] RpcClient init, ServerListFactory = com.alibaba.nacos.client.naming.core.ServerListManager
+23:19:01:681  INFO 4892 --- [main] com.alibaba.nacos.common.remote.client   : [667678b0-b99b-4dfb-bdec-909c0488cf15] Registry connection listener to current client:com.alibaba.nacos.client.naming.remote.gprc.redo.NamingGrpcRedoService
+23:19:01:685  INFO 4892 --- [main] com.alibaba.nacos.common.remote.client   : [667678b0-b99b-4dfb-bdec-909c0488cf15] Register server push request handler:com.alibaba.nacos.client.naming.remote.gprc.NamingPushRequestHandler
+23:19:01:687  INFO 4892 --- [main] com.alibaba.nacos.common.remote.client   : [667678b0-b99b-4dfb-bdec-909c0488cf15] Try to connect to server on start up, server: {serverIp = '192.168.100.128', server main port = 8848}
+23:19:03:072  INFO 4892 --- [main] com.alibaba.nacos.common.remote.client   : [667678b0-b99b-4dfb-bdec-909c0488cf15] Success to connect to server [192.168.100.128:8848] on start up, connectionId = 1794237471207_192.168.100.1_62442
+23:19:03:073  INFO 4892 --- [com.alibaba.nacos.client.remote.worker] com.alibaba.nacos.common.remote.client   : [667678b0-b99b-4dfb-bdec-909c0488cf15] Notify connected event to listeners.
+23:19:03:073  INFO 4892 --- [main] com.alibaba.nacos.common.remote.client   : [667678b0-b99b-4dfb-bdec-909c0488cf15] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$ConnectResetRequestHandler
+23:19:03:074  INFO 4892 --- [main] com.alibaba.nacos.common.remote.client   : [667678b0-b99b-4dfb-bdec-909c0488cf15] Register server push request handler:com.alibaba.nacos.common.remote.client.RpcClient$$Lambda$925/0x000002cd817424c8
+23:19:03:150  INFO 4892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8085 (http) with context path ''
+23:19:03:169  INFO 4892 --- [main] c.a.c.n.registry.NacosServiceRegistry    : nacos registry, DEFAULT_GROUP trade-service 192.168.255.1:8085 register finished
+23:19:03:644  INFO 4892 --- [nacos-grpc-client-executor-10] com.alibaba.nacos.common.remote.client   : [667678b0-b99b-4dfb-bdec-909c0488cf15] Receive server push request, request = NotifySubscriberRequest, requestId = 67
+23:19:03:652  INFO 4892 --- [nacos-grpc-client-executor-10] com.alibaba.nacos.common.remote.client   : [667678b0-b99b-4dfb-bdec-909c0488cf15] Ack server push request, request = NotifySubscriberRequest, requestId = 67
+23:19:04:428  INFO 4892 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+23:19:04:429  INFO 4892 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Documentation plugins bootstrapped
+23:19:04:433  INFO 4892 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+23:19:04:455  INFO 4892 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+23:19:04:544  INFO 4892 --- [main] com.hmall.trade.TradeApplication         : Started TradeApplication in 10.983 seconds (JVM running for 11.596)
+23:19:05:176  INFO 4892 --- [http-nio-8085-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+23:19:05:177  INFO 4892 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+23:19:05:178  INFO 4892 --- [http-nio-8085-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+23:19:05:196  WARN 4892 --- [http-nio-8085-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+23:19:17:964  WARN 4892 --- [http-nio-8085-exec-2] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]

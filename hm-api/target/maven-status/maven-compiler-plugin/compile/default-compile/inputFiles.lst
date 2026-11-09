@@ -1,3 +1,5 @@
 F:\Code\hmall\hm-api\src\main\java\com\hmall\api\client\ItemClient.java
 F:\Code\hmall\hm-api\src\main\java\com\hmall\api\config\DefaultFeignConfig.java
+F:\Code\hmall\hm-api\src\main\java\com\hmall\api\client\CartClient.java
+F:\Code\hmall\hm-api\src\main\java\com\hmall\api\dto\OrderDetailDTO.java
 F:\Code\hmall\hm-api\src\main\java\com\hmall\api\dto\ItemDTO.java
