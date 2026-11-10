@@ -10,7 +10,7 @@ import org.springframework.security.rsa.crypto.KeyStoreKeyFactory;
 import java.security.KeyPair;
 
 @Configuration
-@EnableConfigurationProperties(JwtProperties.class)
+@EnableConfigurationProperties({JwtProperties.class, AuthProperties.class})
 public class SecurityConfig {
 
     @Bean
