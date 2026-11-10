@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cart-service" />
+        <module name="hm-gateway" />
         <module name="trade-service" />
         <module name="hm-common" />
         <module name="item-service" />
@@ -22,6 +23,7 @@
       <module name="cart-service" options="-parameters" />
       <module name="hm-api" options="-parameters" />
       <module name="hm-common" options="-parameters" />
+      <module name="hm-gateway" options="-parameters" />
       <module name="hm-service" options="-parameters" />
       <module name="item-service" options="-parameters" />
       <module name="trade-service" options="-parameters" />
